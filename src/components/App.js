@@ -10,6 +10,9 @@ function App() {
       <Header />
       <Routes>
         {/* <Route path='/' element={<HomeControl />} /> */}
+        {/* <Route path='/' element={ServicesControl />} /> */}
+        {/* <Route path='/' element={TeamControl />} /> */}
+        {/* <Route path='/' element={ContactControl />} /> */}
       </Routes>
     </Router>
   );
