@@ -9,7 +9,13 @@ function Header() {
     <React.Fragment>
       <Navbar bg="dark" data-bs-theme="dark" fixed="top">
         <Container>
-          <Navbar.Brand href='/'>Ampers & Ampersand</Navbar.Brand>
+          <Navbar.Brand href='/'>&Home</Navbar.Brand>
+          <Nav className='justify-content-end'>
+            <Nav.Link href='/'>Home</Nav.Link>
+            <Nav.Link href='/'>Services</Nav.Link>
+            <Nav.Link href='/'>Team</Nav.Link>
+            <Nav.Link href='/'>Contact</Nav.Link>
+          </Nav>
         </Container>
       </Navbar>
     </React.Fragment>
