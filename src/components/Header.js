@@ -12,9 +12,9 @@ function Header() {
           <Navbar.Brand href='/'>&Home</Navbar.Brand>
           <Nav className='justify-content-end'>
             <Nav.Link href='/'>Home</Nav.Link>
-            <Nav.Link href='/'>Services</Nav.Link>
-            <Nav.Link href='/'>Team</Nav.Link>
-            <Nav.Link href='/'>Contact</Nav.Link>
+            <Nav.Link href='/services'>Services</Nav.Link>
+            <Nav.Link href='/team'>Team</Nav.Link>
+            <Nav.Link href='/contact'>Contact</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
