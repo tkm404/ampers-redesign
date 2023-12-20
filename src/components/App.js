@@ -19,7 +19,7 @@ function App() {
         <Route path='/team' element={<TeamControl />} />
         <Route path='/contact' element={<ContactControl />} />
       </Routes>
-      <Banner />
+      {/* <Banner /> */}
     </Router>
   );
 }
