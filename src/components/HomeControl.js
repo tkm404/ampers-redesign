@@ -5,6 +5,7 @@ import Container from 'react-bootstrap/Container'
 import Home from '../pages/Home'
 import Banner from './Banner'
 import HomeCarousel from './HomeCarousel'
+import CompanyStatement from './CompanyStatement'
 
 function HomeControl() {
   let currentlyVisibleState = 
@@ -17,12 +18,12 @@ function HomeControl() {
           <Stack gap={2} className="p-4 col-md-8 mx-auto">
             {currentlyVisibleState} 
           </Stack>
-
         <Banner />
-
       </React.Fragment>
       </div>
-
+      <div>
+        <CompanyStatement />
+      </div>
       <div>
         <div className='p-5'>
           <HomeCarousel />  
