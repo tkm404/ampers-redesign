@@ -6,6 +6,7 @@ import Home from '../pages/Home'
 import Banner from './Banner'
 import HomeCarousel from './HomeCarousel'
 import CompanyStatement from './CompanyStatement'
+import HomeTestimonials from './HomeTestimonials'
 
 function HomeControl() {
   let currentlyVisibleState = 
@@ -28,6 +29,9 @@ function HomeControl() {
         <div className='p-5'>
           <HomeCarousel />  
         </div>
+      </div>
+      <div>
+        <HomeTestimonials />
       </div>
 
     </div>
