@@ -4,6 +4,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
+import {ResidentialCarousel, CommercialCarousel, HandiworkCarousel} from './ServicesCarousels'
 
 // Residential Remodel
 // Commercial Tenant Improvements
@@ -11,29 +12,31 @@ import Button from 'react-bootstrap/Button'
 // Animation frames reveal portfolio pieces?
 
 function ServicesMenu() {
+  const [open, setOpen] = useState(false);
   return (
     <Container>
       <Row className="p-4">
         <Col>
-          <Card style={{ width: '18rem' }}>
+          <Card style={{ width: '18rem'}}>
             <Card.Body>
               <Card.Title><strong>Residential Remodel</strong></Card.Title>
               <Card.Text>
                 For all of your living space rearrangement needs
               </Card.Text>
-              <Button>See More</Button>
+              <Button
+                onClick={() => setOpen(!open)}
+                >See More
+              </Button>
             </Card.Body>
-            </Card>
-          </Col>
+          </Card>
+        </Col>
         <Col>
-          <Row><strong>Price Quotes:</strong></Row>
-          <Row>
-            <ul>
-              <li>Feeling like my only friend is the city of angels: $50/hr</li>
-              <li>And another thing</li>              
-            </ul>
-          </Row>
-          </Col>
+          <Card style = {{ width: '18rem'}}>
+            <Card.Body>
+              <ResidentialCarousel/>
+            </Card.Body>
+          </Card>
+        </Col>
       </Row>
 
       <Row className="p-4">
@@ -49,13 +52,11 @@ function ServicesMenu() {
           </Card>
         </Col>
         <Col>
-          <Row><strong>Price Quotes:</strong></Row>
-          <Row>
-            <ul>
-              <li>Do a litte dance and drink a little water: $100/hr</li>
-              <li>Some other service</li>
-              </ul>
-          </Row>
+          <Card style={{ width: '18rem' }}>
+            <Card.Body>
+              <CommercialCarousel/>
+            </Card.Body>
+          </Card>
         </Col>
       </Row>
       
@@ -72,13 +73,11 @@ function ServicesMenu() {
           </Card>
         </Col>
         <Col>
-          <Row><strong>Price Quotes:</strong></Row>
-          <Row>
-            <ul>
-              <li>Sing about California: $25/hr</li>
-              <li>Another such thing</li>
-            </ul>
-            </Row>
+          <Card style={{ width: '18rem' }}>
+            <Card.Body>
+              <HandiworkCarousel/>
+            </Card.Body>
+          </Card>
         </Col>
       </Row>
     </Container>
