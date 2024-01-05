@@ -36,10 +36,10 @@ function ResidentialCarousel() {
   };
 
   return (
-    <Carousel data-bs-theme="light" activeIndex={index} onSelect={handleSelect} fade>
+    <Carousel data-bs-theme="light" activeIndex={index} onSelect={handleSelect} fade interval={null}>
       {ResidentialData.map((slide, i) => {
         return (
-          <Carousel.Item interval={null}>
+          <Carousel.Item>
             <img
             className='d-block w-100'
             src={slide.image}
@@ -60,10 +60,10 @@ function CommercialCarousel() {
   };
 
   return (
-    <Carousel data-bs-theme="light" activeIndex={index} onSelect={handleSelect} fade>
+    <Carousel data-bs-theme="light" activeIndex={index} onSelect={handleSelect} fade interval={null}>
       {CommercialData.map((slide, i) => {
         return (
-          <Carousel.Item interval={null}>
+          <Carousel.Item>
             <img
             className='d-block w-100'
             src={slide.image}
@@ -84,10 +84,10 @@ function HandiworkCarousel() {
   };
 
   return (
-    <Carousel data-bs-theme="light" activeIndex={index} onSelect={handleSelect} fade>
+    <Carousel data-bs-theme="light" activeIndex={index} onSelect={handleSelect} fade interval={null}>
       {HandiworkData.map((slide, i) => {
         return (
-          <Carousel.Item interval={null}>
+          <Carousel.Item>
             <img
             className='d-block w-100'
             src={slide.image}
