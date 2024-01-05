@@ -7,6 +7,7 @@ import ServicesControl from './ServicesControl'
 import TeamControl from './TeamControl'
 import ContactControl from './ContactControl'
 import Footer from './Footer';
+import '../CSS/HomeCarousel.css'
 
 function App() {
   return (
