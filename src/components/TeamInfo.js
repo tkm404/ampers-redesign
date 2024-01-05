@@ -11,15 +11,37 @@ function TeamInfo() {
     <Container>
       <Row className="p-4 mx-auto">
         <Col>
-          <h4>Scott McDowell,</h4>
-          <h6>Owner</h6>
           <img alt="Scott goes here"></img>
+          <h6>Scott, Owner</h6>
         </Col>
         <Col>
-          <h4>Igor,</h4>
-          <h6>Operations Manager</h6>
-          <img alt="Igor is the Ops Man"></img>
+          <img alt="Igor is the Ops Man"></img>        
+          <h6>Igor, Operations Manager</h6>
         </Col>
+      </Row>
+      <Row className="p-4 mx-auto">
+        <Col>
+          <img alt="Jesse Site Lead"></img>
+          <h6>Jesse, Site Lead</h6>
+        </Col>
+        <Col>
+          <img alt="Dan Crewmember"></img>
+          <h6>Dan, Crewmember</h6>
+        </Col>
+      </Row>
+      <Row className="p-4 mx-auto">
+        <Col>
+          <img alt="Omar Crewmember"></img>
+          <h6>Omar, Crewmember</h6>
+        </Col>
+        <Col>
+          <img alt="Lauren Crewmember"></img>
+          <h6>Lauren, Crewmember</h6>
+        </Col>
+      </Row>
+      <Row className="p-4 mx-auto">
+        <img alt="Matt Crewmember"></img>
+        <h6>Matt, Crewmember</h6>
       </Row>
     </Container>
   )
