@@ -23,7 +23,12 @@ const data = [
     description: "Image Description"
   },
   {
-    image: require('../assets/img/examplepic2.jpg'),
+    image: require('../assets/img/examplepic3.jpg'),
+    caption: "Repairs &",
+    description: "Image Description"
+  },
+  {
+    image: require('../assets/img/AmpersHats.jpg'),
     caption: "Ampers & Ampersand",
     description: "Image Description"
   }
@@ -42,7 +47,7 @@ function HomeCarousel() {
         return (
           <Carousel.Item>
             <img
-              className='d-block w-100'
+              className='d-block w-100 mh-50'
               src={slide.image}
               alt='slider'
             />
