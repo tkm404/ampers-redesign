@@ -4,17 +4,27 @@ import Carousel from 'react-bootstrap/Carousel';
 const data = [
   {
     image: require('../assets/img/examplepic1.jpg'),
-    caption: "Image Caption",
+    caption: "Decks &",
     description: "Image Description"
   },
   {
     image: require('../assets/img/examplepic2.jpg'),
-    caption: "Image Caption",
+    caption: "Fences &",
     description: "Image Description"
   },
   {
     image: require('../assets/img/examplepic3.jpg'),
-    caption: "Image Caption",
+    caption: "Repairs &",
+    description: "Image Description"
+  },
+  {
+    image: require('../assets/img/examplepic1.jpg'),
+    caption: "Remodels &",
+    description: "Image Description"
+  },
+  {
+    image: require('../assets/img/examplepic2.jpg'),
+    caption: "Ampers & Ampersand",
     description: "Image Description"
   }
 ]
