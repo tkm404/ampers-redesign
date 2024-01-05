@@ -3,7 +3,7 @@ import Carousel from 'react-bootstrap/Carousel';
 
 const ResidentialData = [
   {
-    image: require('../assets/img/servExample1.jpg'),
+    image: require('../assets/img/ResidentialRemodels1.jpg'),
   },
   {
     image: require('../assets/img/servExample2.jpg')
@@ -12,7 +12,7 @@ const ResidentialData = [
 
 const CommercialData = [
   {
-    image: require('../assets/img/servExample3.jpg')
+    image: require('../assets/img/CommTenantImprove1.jpg')
   },
   {
     image: require('../assets/img/servExample4.jpg')
@@ -21,10 +21,13 @@ const CommercialData = [
 
 const HandiworkData = [
   {
-    image: require('../assets/img/servExample5.jpg')
+    image: require('../assets/img/Handiwork&More1.jpg')
   },
   {
-    image: require('../assets/img/servExample6.jpg')
+    image: require('../assets/img/Handiwork&More2.jpg')
+  },
+  {
+    image: require('../assets/img/Handiwork&More3.jpg')
   }
 ]
 
