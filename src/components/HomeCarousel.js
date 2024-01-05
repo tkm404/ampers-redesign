@@ -3,7 +3,7 @@ import Carousel from 'react-bootstrap/Carousel';
 
 const data = [
   {
-    image: require('../assets/img/examplepic1.jpg'),
+    image: require('../assets/img/Decks&.jpg'),
     caption: "Decks &",
     description: "Image Description"
   },
@@ -13,7 +13,7 @@ const data = [
     description: "Image Description"
   },
   {
-    image: require('../assets/img/examplepic3.jpg'),
+    image: require('../assets/img/Repairs&.jpg'),
     caption: "Repairs &",
     description: "Image Description"
   },
@@ -23,12 +23,12 @@ const data = [
     description: "Image Description"
   },
   {
-    image: require('../assets/img/examplepic3.jpg'),
-    caption: "Repairs &",
+    image: require('../assets/img/Commercial&.jpg'),
+    caption: "Commercial &",
     description: "Image Description"
   },
   {
-    image: require('../assets/img/AmpersHats.jpg'),
+    image: require('../assets/img/AmpersHatsResize.jpg'),
     caption: "Ampers & Ampersand",
     description: "Image Description"
   }
@@ -42,12 +42,12 @@ function HomeCarousel() {
   };
 
   return (
-    <Carousel data-bs-theme="light" activeIndex={index} onSelect={handleSelect} fade>
+    <Carousel data-bs-theme="light" activeIndex={index} onSelect={handleSelect} fade interval={null}>
       {data.map((slide, i) => {
         return (
           <Carousel.Item>
             <img
-              className='d-block w-100 mh-50'
+              className='d-block w-100'
               src={slide.image}
               alt='slider'
             />
