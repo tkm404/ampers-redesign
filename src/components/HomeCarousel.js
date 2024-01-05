@@ -5,32 +5,32 @@ const data = [
   {
     image: require('../assets/img/Decks&.jpg'),
     caption: "Decks &",
-    description: "Image Description"
+    // description: "Image Description"
   },
   {
-    image: require('../assets/img/examplepic2.jpg'),
+    image: require('../assets/img/Fences&.jpg'),
     caption: "Fences &",
-    description: "Image Description"
+    // description: "Image Description"
   },
   {
     image: require('../assets/img/Repairs&.jpg'),
     caption: "Repairs &",
-    description: "Image Description"
+    // description: "Image Description"
   },
   {
-    image: require('../assets/img/examplepic1.jpg'),
+    image: require('../assets/img/Remodels&.jpg'),
     caption: "Remodels &",
-    description: "Image Description"
+    // description: "Image Description"
   },
   {
     image: require('../assets/img/Commercial&.jpg'),
     caption: "Commercial &",
-    description: "Image Description"
+    // description: "Image Description"
   },
   {
     image: require('../assets/img/AmpersHatsResize.jpg'),
     caption: "Ampers & Ampersand",
-    description: "Image Description"
+    // description: "Image Description"
   }
 ]
 
@@ -53,7 +53,7 @@ function HomeCarousel() {
             />
             <Carousel.Caption>
               <h3>{slide.caption}</h3>
-              <p>{slide.description}</p>
+              {/* <p>{slide.description}</p> */}
             </Carousel.Caption>
           </Carousel.Item>
         )
