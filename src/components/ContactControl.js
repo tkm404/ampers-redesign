@@ -1,6 +1,7 @@
 import React from 'react';
 import Stack from 'react-bootstrap/Stack'
 import Contact from '../pages/Contact'
+import ContactForm from './ContactForm';
 import Banner from './Banner';
 
 
@@ -11,6 +12,7 @@ function ContactControl() {
         <Contact />
       </Stack>
       <Banner />
+      {/* <ContactForm/> */}
     </React.Fragment>
   )
 }
