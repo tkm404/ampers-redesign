@@ -42,7 +42,7 @@ function HomeCarousel() {
   };
 
   return (
-    <Carousel data-bs-theme="light" activeIndex={index} onSelect={handleSelect} fade interval={null}>
+    <Carousel data-bs-theme="light" activeIndex={index} onSelect={handleSelect} fade>
       {data.map((slide, i) => {
         return (
           <Carousel.Item>
