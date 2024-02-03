@@ -1,11 +1,11 @@
 import React from 'react';
-import Stack from 'react-bootstrap/Stack'
-import Contact from '../pages/Contact'
+import Stack from 'react-bootstrap/Stack';
+import Contact from '../pages/Contact';
 import ContactForm from './ContactForm';
 import Banner from './Banner';
 import PropTypes from 'prop-types';
-import db from './../firebase.js'
-import { collection, addDoc } from 'firebase/firestore'
+import { db } from './../firebase.js';
+import { collection, addDoc } from 'firebase/firestore';
 
 
 function ContactControl() {
