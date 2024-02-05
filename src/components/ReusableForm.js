@@ -16,9 +16,11 @@ function ReusableForm(props) {
               <Form.Group controlId='formClientName'>
                 <Form.Label>Name:</Form.Label>
                 <Form.Control
+                required
                 type='text'
                 name='clientName'
-                defaultValue=''/>
+                // defaultValue=''
+                />
               </Form.Group>
             </Col>
           </Row>
@@ -27,10 +29,12 @@ function ReusableForm(props) {
               <Form.Group controlId='formClientEmail'>
                 <Form.Label>Email Address:</Form.Label>
                 <Form.Control
+                required
                 type='email'
                 name='clientEmail'
                 placeholder='name@example.com'
-                defaultValue=''/>
+                // defaultValue=''
+                />
               </Form.Group>
             </Col>
           </Row>
@@ -39,10 +43,14 @@ function ReusableForm(props) {
               <Form.Group controlId='formClientMessage'>
                 <Form.Label>How Can We Help?</Form.Label>
                 <Form.Control
+                required
                 as='textarea'
                 rows={3}
                 name='clientMessage'
-                placeholder='Your message here' />
+                placeholder='Your message here' 
+                // defaultValue=''               
+                />
+
               </Form.Group>
             </Col>
           </Row>
