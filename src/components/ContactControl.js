@@ -25,9 +25,7 @@ function ContactControl() {
     } else {
       setError(error)
     }
-  }
-
-    let currentlyVisible = null;  
+  } 
 
   if (formVisibleOnPage) {
   return (
