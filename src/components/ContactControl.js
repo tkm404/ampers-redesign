@@ -17,7 +17,7 @@ function ContactControl() {
   const [error, setError] = useState(null);
 
   const handleAddingClientSubmission = async (newClientMessage) => {
-    const collectionRef = collection(db, "TestEmails");
+    const collectionRef = collection(db, "MAIL_COLLECTION");
     await addDoc(collectionRef, newClientMessage);
     setFormVisibleOnPage(false)
     if (!error) {
