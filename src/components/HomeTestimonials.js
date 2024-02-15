@@ -14,10 +14,10 @@ function HomeTestimonials() {
 
       </Row>
       <Row className="mx-2 pb-4">
-        <Col>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</Col>
-        <Col>"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</Col>
-        <Col>"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."</Col>
-        <Col>"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</Col>
+        <Col></Col>
+        <Col>Coming Soon!</Col>
+        <Col>Be the first to share your AmperStory!</Col>
+        <Col></Col>
       </Row>
     </Container>
 

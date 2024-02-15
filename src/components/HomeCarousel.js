@@ -3,19 +3,34 @@ import Carousel from 'react-bootstrap/Carousel';
 
 const data = [
   {
-    image: require('../assets/img/examplepic1.jpg'),
-    caption: "Image Caption",
-    description: "Image Description"
+    image: require('../assets/img/Decks&.jpg'),
+    caption: "Decks &",
+    // description: "Image Description"
   },
   {
-    image: require('../assets/img/examplepic2.jpg'),
-    caption: "Image Caption",
-    description: "Image Description"
+    image: require('../assets/img/Fences&.jpg'),
+    caption: "Fences &",
+    // description: "Image Description"
   },
   {
-    image: require('../assets/img/examplepic3.jpg'),
-    caption: "Image Caption",
-    description: "Image Description"
+    image: require('../assets/img/Repairs&.jpg'),
+    caption: "Repairs &",
+    // description: "Image Description"
+  },
+  {
+    image: require('../assets/img/Remodels&.jpg'),
+    caption: "Remodels &",
+    // description: "Image Description"
+  },
+  {
+    image: require('../assets/img/Commercial&.jpg'),
+    caption: "Commercial &",
+    // description: "Image Description"
+  },
+  {
+    image: require('../assets/img/AmpersTeam2.jpg'),
+    caption: "Ampers & Ampersand",
+    // description: "Image Description"
   }
 ]
 
@@ -27,7 +42,7 @@ function HomeCarousel() {
   };
 
   return (
-    <Carousel data-bs-theme="light" activeIndex={index} onSelect={handleSelect}>
+    <Carousel id="homeCarousel" data-bs-theme="light" activeIndex={index} onSelect={handleSelect} fade>
       {data.map((slide, i) => {
         return (
           <Carousel.Item>
@@ -38,7 +53,7 @@ function HomeCarousel() {
             />
             <Carousel.Caption>
               <h3>{slide.caption}</h3>
-              <p>{slide.description}</p>
+              {/* <p>{slide.description}</p> */}
             </Carousel.Caption>
           </Carousel.Item>
         )
