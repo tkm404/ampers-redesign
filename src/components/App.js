@@ -8,6 +8,7 @@ import TeamControl from './TeamControl'
 import ContactControl from './ContactControl'
 import Footer from './Footer';
 import '../CSS/HomeCarousel.css'
+import '../CSS/TeamPhoto.css'
 
 function App() {
   return (
