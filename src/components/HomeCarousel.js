@@ -28,7 +28,7 @@ const data = [
     // description: "Image Description"
   },
   {
-    image: require('../assets/img/AmpersHatsResize.jpg'),
+    image: require('../assets/img/AmpersTeam2.jpg'),
     caption: "Ampers & Ampersand",
     // description: "Image Description"
   }
@@ -42,7 +42,7 @@ function HomeCarousel() {
   };
 
   return (
-    <Carousel data-bs-theme="light" activeIndex={index} onSelect={handleSelect} fade>
+    <Carousel id="homeCarousel" data-bs-theme="light" activeIndex={index} onSelect={handleSelect} fade>
       {data.map((slide, i) => {
         return (
           <Carousel.Item>
