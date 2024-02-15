@@ -6,7 +6,7 @@ const ResidentialData = [
     image: require('../assets/img/ResidentialRemodels1.jpg'),
   },
   {
-    image: require('../assets/img/servExample2.jpg')
+    // image: require('../assets/img/servExample2.jpg')
   }
 ]
 
@@ -15,7 +15,7 @@ const CommercialData = [
     image: require('../assets/img/CommTenantImprove1.jpg')
   },
   {
-    image: require('../assets/img/servExample4.jpg')
+    // image: require('../assets/img/servExample4.jpg')
   }
 ]
 
@@ -46,7 +46,7 @@ function ResidentialCarousel() {
             <img
             className='d-block w-100'
             src={slide.image}
-            alt='slider'
+            alt='coming soon'
             />
           </Carousel.Item>
         )
@@ -70,7 +70,7 @@ function CommercialCarousel() {
             <img
             className='d-block w-100'
             src={slide.image}
-            alt='slider'
+            alt='coming soon'
             />
           </Carousel.Item>
         )
@@ -94,7 +94,7 @@ function HandiworkCarousel() {
             <img
             className='d-block w-100'
             src={slide.image}
-            alt='slider'
+            alt='coming soon'
             />
           </Carousel.Item>          
         )
