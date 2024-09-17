@@ -2,6 +2,7 @@ import React from "react";
 import Crossword from "../pages/Crossword";
 import { Stack } from "react-bootstrap";
 import Banner from "./Banner";
+import CrosswordMenu from "./CrosswordMenu";
 
 function CrosswordControl() {
 
@@ -13,6 +14,9 @@ function CrosswordControl() {
         </Stack>
         <Banner />
       </React.Fragment>
+      <div>
+        <CrosswordMenu />
+      </div>
     </div>
   )
 }
