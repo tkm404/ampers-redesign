@@ -9,6 +9,7 @@ import ContactControl from './ContactControl'
 import Footer from './Footer';
 import '../CSS/HomeCarousel.css'
 import '../CSS/TeamPhoto.css'
+import CrosswordControl from './CrosswordControl';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path='/services' element={<ServicesControl />} />
         <Route path='/team' element={<TeamControl />} />
         <Route path='/contact' element={<ContactControl />} />
+        <Route path='/crossword' element={<CrosswordControl />} />
       </Routes>
       {/* <Banner /> */}
       <Footer />

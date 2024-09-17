@@ -14,6 +14,7 @@ function Header() {
             <Nav.Link href='/'>Home</Nav.Link>
             <Nav.Link href='/services'>Services</Nav.Link>
             <Nav.Link href='/team'>Team</Nav.Link>
+            <Nav.Link href='/crossword'>Crossword</Nav.Link>            
             <Nav.Link href='/contact'>Contact</Nav.Link>
           </Nav>
         </Container>
