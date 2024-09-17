@@ -6,7 +6,10 @@ const ResidentialData = [
     image: require('../assets/img/ResidentialRemodels1.jpg'),
   },
   {
-    // image: require('../assets/img/servExample2.jpg')
+    image: require('../assets/img/resident construction.jpg')
+  },
+  {
+    image: require('../assets/img/residential garage.jpg')
   }
 ]
 
@@ -15,7 +18,10 @@ const CommercialData = [
     image: require('../assets/img/CommTenantImprove1.jpg')
   },
   {
-    // image: require('../assets/img/servExample4.jpg')
+    image: require('../assets/img/Wonderlove bar.png')
+  },
+  {
+    image: require('../assets/img/commercial wall.jpg')
   }
 ]
 
