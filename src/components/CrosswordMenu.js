@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
@@ -7,7 +7,12 @@ import ToggleButton from 'react-bootstrap/ToggleButton';
 import ToggleButtonGroup  from 'react-bootstrap/ToggleButtonGroup';
 
 function CrosswordMenu() {
-  
+  const [selectedButton, setSelectedButton] = useState(0);
+
+  const handleClick = () => {
+    setSelectedButton(selectedButton)
+    console.log(selectedButton)
+  }
   return (
     <Container>
       <Row className="p-4">
@@ -18,13 +23,13 @@ function CrosswordMenu() {
             <br />
             <ToggleButtonGroup vertical type="radio" name="crosswordhist" defaultValue={1}>
 
-              <ToggleButton id="cross-radio-1" value={1}>
+              <ToggleButton onClick={handleClick} id="cross-radio-1" value={1}>
                 All For One, One For All - <i>9/17/24</i>
               </ToggleButton>
-              <ToggleButton id="cross-radio-2" value={2}>
+              <ToggleButton onClick={handleClick} id="cross-radio-2" value={2}>
                 Crossword Title 2 - <i>last month</i>
               </ToggleButton>
-              <ToggleButton id="cross-radio-3" value={3}>
+              <ToggleButton onClick={handleClick} id="cross-radio-3" value={3}>
                 Crossword Title 3 - <i>forever ago</i>
               </ToggleButton>
             </ToggleButtonGroup>
