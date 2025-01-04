@@ -10,12 +10,15 @@ function Footer() {
   return (
       <Navbar bg="dark" data-bs-theme="dark">
         <Container className='d-flex pt-4 justify-content-center'>
-          <Row >
+          <Row>
             <Col>
               <p className='text-white'>[971.357.1858]</p>            
             </Col>
             <Col>
               <p className='text-white'>[workorders@amperspdx.com]</p>
+            </Col>
+            <Col md="auto">
+              <p className='text-white'>[Ampers LLC OR CCB#225376]</p>
             </Col>
           </Row>
         </Container>
