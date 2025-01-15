@@ -7,7 +7,7 @@ function ContactForm(props) {
   function handleNewClientSubmission(event) {
     event.preventDefault();
     props.onClientSubmission({
-      to: 'workorders@amperspdx.com@gmail.com',
+      to: 'workorders@amperspdx.com',
       bcc: 'scottmcdowellpdx@gmail.com',
       message: {
       subject: 'Firebase Mail Form - ' + event.target.clientName.value,
