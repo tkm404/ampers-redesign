@@ -20,7 +20,7 @@ function App() {
         <Route path='/services' element={<ServicesControl />} />
         <Route path='/team' element={<TeamControl />} />
         <Route path='/contact' element={<ContactControl />} />
-        <Route path='/crossword' element={<CrosswordControl />} />
+        {/* <Route path='/crossword' element={<CrosswordControl />} /> */}
       </Routes>
       {/* <Banner /> */}
       <Footer />
