@@ -1,12 +1,20 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
+import Card from 'react-bootstrap/Card'
 // import ExampleCarouselImage from 'component/ExampleCarouselImage';
 
 function CustomerReviewCarousel() {
   return (
     <Carousel fade>
-      <Carousel.Item>
-        <div text="Quick, professional, high-quality work every time. Fair pricing and a contractor we truly trust."/>
+      <Carousel.Item active>
+        <Card className="text-center">
+          <Card.Body>
+            <Card.Text>
+              "Quick, professional, high-quality work every time. Fair pricing and a contractor we truly trust."
+            </Card.Text>
+          </Card.Body>
+        </Card>
+        {/* <div class="reviewText" text="Quick, professional, high-quality work every time. Fair pricing and a contractor we truly trust."/> */}
           <Carousel.Caption>
             <h3>Aiden L.</h3>
             <p>North Portland</p>
@@ -27,7 +35,7 @@ function CustomerReviewCarousel() {
           </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <div text="You can't find a better contractor- quality, timing, and cost are all spot on." />
+        <div text="You can't find a better contractor- quality, timing, and cost are all spot on."/>
           <Carousel.Caption>
             <h3>Tricia M.</h3>
             <p>Sellwood, client since 2021</p>
