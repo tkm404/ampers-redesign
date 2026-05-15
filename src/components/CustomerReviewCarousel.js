@@ -1,33 +1,33 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import ExampleCarouselImage from 'component/ExampleCarouselImage';
+// import ExampleCarouselImage from 'component/ExampleCarouselImage';
 
 function CustomerReviewCarousel() {
   return (
     <Carousel fade>
       <Carousel.Item>
-        <ExampleCarouselImage text="Quick, professional, high-quality work every time. Fair pricing and a contractor we truly trust."/>
+        <div text="Quick, professional, high-quality work every time. Fair pricing and a contractor we truly trust."/>
           <Carousel.Caption>
             <h3>Aiden L.</h3>
             <p>North Portland</p>
           </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <ExampleCarouselImage text="On time, on budget, and professional. They took the time to fully understand the project before quoting."/>
+        <div text="On time, on budget, and professional. They took the time to fully understand the project before quoting."/>
           <Carousel.Caption>
             <h3>Dan S.</h3>
             <p>Portland</p>
           </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <ExampleCarouselImage text="What started small turned into a big project- and they handled it flawlessly from start to finish." />
+        <div text="What started small turned into a big project- and they handled it flawlessly from start to finish." />
           <Carousel.Caption>
             <h3>Meredith</h3>
             <p>Hillsboro</p>
           </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <ExampleCarouselImage text="You can't find a better contractor- quality, timing, and cost are all spot on." />
+        <div text="You can't find a better contractor- quality, timing, and cost are all spot on." />
           <Carousel.Caption>
             <h3>Tricia M.</h3>
             <p>Sellwood, client since 2021</p>
