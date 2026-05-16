@@ -1,7 +1,17 @@
-import React from 'react';
+import React, {useEffect, useCallback, useState} from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import Card from 'react-bootstrap/Card'
 // import ExampleCarouselImage from 'component/ExampleCarouselImage';
+
+
+
+const CardCarousel = () => {
+  const [indexes, setIndexes] = useState({
+    previousIndex: 0,
+    currentIndex: 0,
+    nextIndex: 1,
+  });
+}
 
 function CustomerReviewCarousel() {
   return (
