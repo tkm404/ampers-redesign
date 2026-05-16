@@ -3,7 +3,7 @@ import React, {useEffect, useCallback, useState} from 'react';
 // import Card from 'react-bootstrap/Card'
 // import ExampleCarouselImage from 'component/ExampleCarouselImage';
 
-const CardItems = [
+const cardItems = [
   {
     id: 1,
     title: 'Aiden, North Portland',
@@ -26,6 +26,8 @@ const CardItems = [
   },
 ];
 
+
+
 function determineClasses(indexes, cardIndex) {
   if (indexes.currentIndex === cardIndex) {
     return 'active';
@@ -37,6 +39,7 @@ function determineClasses(indexes, cardIndex) {
   return 'inactive';
 }
 
+
 const CardCarousel = () => {
   const [indexes, setIndexes] = useState({
     previousIndex: 0,
@@ -44,11 +47,27 @@ const CardCarousel = () => {
     nextIndex: 1,
   });
 
+  const handleCardTransition = useCallback(() => {
+  if (indexes.currentIndex >= cardItems.length - 1) {
+    setIndexes({
+      previousIndex: cardItems.length - 1,
+      currentIndex: 0,
+      nextIndex:1,
+    });
+  } else {
+    setIndexes((prevState) => ({
+      previousIndex: prevState.currentIndex,
+      currentIndex: prevState.currentIndex + 1,
+      nextIndex: prevState.currentIndex + 2 === cardItems.length ? 0 : prevState.currentIndex + 2,
+    }));
+  }
+}, [indexes.currentIndex]);
+
   return (
     <div className="container">
       <button onClick={handleCardTransition}>Transition to next card</button>
       <ul className="card-carousel">
-        {CardItems.map((card, index) => (
+        {cardItems.map((card, index) => (
           <li
             key={card.id}
             className={`card ${determineClasses(indexes, index)}`}>
@@ -103,4 +122,4 @@ const CardCarousel = () => {
 //   )
 // }
 
-// export default CustomerReviewCarousel;
+export default CardCarousel;
