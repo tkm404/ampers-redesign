@@ -74,7 +74,7 @@ useEffect(() => {
 
   return (
     <div className="container">
-      <button onClick={handleCardTransition}>Transition to next card</button>
+      {/* <button onClick={handleCardTransition}>Transition to next card</button> */}
       <ul className="card-carousel">
         {cardItems.map((card, index) => (
           <li
