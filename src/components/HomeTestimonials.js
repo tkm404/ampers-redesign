@@ -12,16 +12,8 @@ function HomeTestimonials() {
         <Col sm={8} className="text-center">        
           <CardCarousel/>
         </Col>
-
-      </Row>
-      <Row className="mx-2 pb-4">
-        <Col></Col>
-        <Col>Coming Soon!</Col>
-        <Col>Be the first to share your AmperStory!</Col>
-        <Col></Col>
       </Row>
     </Container>
-
   )
 }
 
