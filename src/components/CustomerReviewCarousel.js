@@ -2,6 +2,7 @@ import React, {useEffect, useCallback, useState} from 'react';
 // import Carousel from 'react-bootstrap/Carousel';
 // import Card from 'react-bootstrap/Card'
 // import ExampleCarouselImage from 'component/ExampleCarouselImage';
+import './CustomerReviewCards.css'
 
 const cardItems = [
   {
