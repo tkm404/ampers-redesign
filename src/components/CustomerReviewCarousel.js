@@ -64,6 +64,14 @@ const CardCarousel = () => {
   }
 }, [indexes.currentIndex]);
 
+useEffect(() => {
+  const transitionInterval = setInterval(() => {
+    handleCardTransition();
+  }, 5000);
+
+  return () => clearInterval(transitionInterval);
+}, [handleCardTransition, indexes])
+
   return (
     <div className="container">
       <button onClick={handleCardTransition}>Transition to next card</button>
