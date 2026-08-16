@@ -1,4 +1,4 @@
-.card-carousel {
+.customerCard-carousel {
   list-style: none;
   padding: 0;
   display: flex;
@@ -9,7 +9,7 @@
   position: relative;
 }
 
-.card {
+.customerCard {
   background: #ffffff;
   border-radius: 8px;
   border: 1px solid #eeeeee;
@@ -23,25 +23,25 @@
   transform: scale(0.85) translateY(50px);
 }
 
-.card h2,
-.card p {
+.customerCard h2,
+.customerCard p {
   line-height: 1.5;
   margin:0;
 }
 
-.card.active {
+.customerCard.active {
   opacity: 1;
   transform: scale(1) translateY(0);
   box-shadow: 0 30px 20px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
-.card.next {
+.customerCard.next {
   opacity: 1;
   z-index: 0;
 }
 
-.card.prev {
+.customerCard.prev {
   transform: scale (1.1) translateY(-50px);
   z-index: 2;
   opacity: 0;
