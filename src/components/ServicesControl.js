@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 import Services from '../pages/Services'
-import ServicesMenu from "./ServicesMenu";
+import ServicesMenu from './ServicesMenu';
 import Stack from 'react-bootstrap/Stack'
-import Banner from "./Banner";
+import Banner from './Banner';
 
 
 function ServicesControl() {
