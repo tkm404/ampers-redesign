@@ -1,12 +1,14 @@
-import React from 'react'
-// import Button from 'react-bootstrap/Button'
-import Stack from 'react-bootstrap/Stack'
-// import Container from 'react-bootstrap/Container'
-import Home from '../pages/Home'
-import Banner from './Banner'
-import HomeCarousel from './HomeCarousel'
-import CompanyStatement from './CompanyStatement'
-import HomeTestimonials from './HomeTestimonials'
+import React from 'react';
+// import Button from 'react-bootstrap/Button';
+import Stack from 'react-bootstrap/Stack';
+// import Container from 'react-bootstrap/Container';
+import Home from '../pages/Home';
+import Banner from './Banner';
+import HomeCarousel from './HomeCarousel';
+import CompanyStatement from './CompanyStatement';
+import HomeTestimonials from './HomeTestimonials';
+import '../CSS/HomeCarousel.css';
+import '../CSS/TeamPhoto.css';
 
 function HomeControl() {
   let currentlyVisibleState = 
