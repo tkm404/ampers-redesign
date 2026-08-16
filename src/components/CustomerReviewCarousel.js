@@ -75,11 +75,11 @@ useEffect(() => {
   return (
     <div className="container">
       {/* <button onClick={handleCardTransition}>Transition to next card</button> */}
-      <ul className="card-carousel">
+      <ul className="customerCard-carousel">
         {cardItems.map((card, index) => (
           <li
             key={card.id}
-            className={`card ${determineClasses(indexes, index)}`}>
+            className={`customerCard ${determineClasses(indexes, index)}`}>
               <h2>{card.title}</h2>
               <p>{card.copy}</p>
             </li>
