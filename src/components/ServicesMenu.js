@@ -1,10 +1,10 @@
-import React, {useState} from "react";
+import React from "react";
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
-import CardFooter from "react-bootstrap/CardFooter";
-import Button from 'react-bootstrap/Button'
+// import CardFooter from "react-bootstrap/CardFooter";
+// import Button from 'react-bootstrap/Button'
 import {ResidentialCarousel, CommercialCarousel, HandiworkCarousel} from './ServicesCarousels'
 
 // Residential Remodel
