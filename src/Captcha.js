@@ -1,5 +1,5 @@
 const captchaCode={
-  checkBox: process.env.CAPTCHA_CHECKBOX_KEY,
+  sitekey: process.env.REACT_APP_CAPTCHA_CHECKBOX_KEY,
 }
 
-export { captchaCode }
+export default captchaCode
