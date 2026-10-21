@@ -1,14 +1,19 @@
-import React from 'react';
-import ReCAPTCHA from 'react-google-recaptcha';
+import React, {useRef} from 'react';
 import PropTypes from 'prop-types';
 import Form from 'react-bootstrap/Form'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 function ReusableForm(props) {
 
+  const captchaRef = useRef(null);
+  function onChange(value) {
+    console.log("Captcha value:", value);
+    console.log(captchaRef.current)
+  }
     return (
       <Container>
         <Form onSubmit={props.formSubmissionHandler}>
@@ -51,16 +56,22 @@ function ReusableForm(props) {
                 placeholder='Your message here' 
                 // defaultValue=''               
                 />
-
               </Form.Group>
             </Col>
           </Row>
           <Row className='pt-4 justify-content-left'>
             <Col xs='auto'>
-            <Button variant='primary' size='xs auto' type='submit' className='btn btn-primary mb-3'>Send It!</Button>
-                    <ReCAPTCHA sitekey={process.env.REACT_APP_CAPTCHA_CHECKBOX_KEY} />
+            <Button variant='primary' size='xs auto' type='submit' className='btn btn-primary mb-3'>Send It!
+            </Button>
             </Col>
           </Row>
+          <div className= 'formGroup'>
+          <ReCAPTCHA
+          sitekey={process.env.REACT_APP_CAPTCHA_CHECKBOX_KEY}
+          onChange = {onChange}
+          ref={captchaRef}
+          />
+          </div>
         </Form>
       </Container>
   

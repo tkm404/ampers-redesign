@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 import { db } from './../firebase.js';
 import { collection, addDoc } from 'firebase/firestore';
 import ContactSuccess from './ContactSuccess.js';
-import ContactError from './ContactError.js'
+import ContactError from './ContactError.js';
 
 
 function ContactControl() {
@@ -15,7 +15,6 @@ function ContactControl() {
   const [formVisibleOnPage, setFormVisibleOnPage ] = useState(true);
   const [thankYouSubmit, setThankYouSubmit] = useState(false)
   const [error, setError] = useState(null);
-
   const handleAddingClientSubmission = async (newClientMessage) => {
     const collectionRef = collection(db, "MAIL_COLLECTION");
     await addDoc(collectionRef, newClientMessage);
