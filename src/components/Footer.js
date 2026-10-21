@@ -15,7 +15,7 @@ function Footer() {
               <p className='text-white'>[971.357.1858]</p>            
             </Col>
             <Col>
-              <p className='text-white'>[workorders@amperspdx.com]</p>
+              {/* <p className='text-white'>[workorders@amperspdx.com]</p> */}
             </Col>
             <Col md="auto">
               <p className='text-white'>[Ampers LLC OR CCB#225376]</p>
